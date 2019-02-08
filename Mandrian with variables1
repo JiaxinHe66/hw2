@@ -1,0 +1,47 @@
+function setup() {
+  createCanvas(500, 390);
+}
+
+function draw() {
+	background(240);
+	noStroke();
+	strokeCap(SQUARE);
+	
+	fill(225,0,0);// Red1
+  rect(70, 70, 170, 170);// Large red rectangle
+  
+  fill(225,0,0);// Red2
+  rect(240, 0, 45,70);// Small red rectangle
+  
+  fill(225,0,0);// Red3
+  rect(330, 310, 215,80);// Medium red rectangle
+
+	fill(0, 120, 255);// Blue1
+	rect(0, 240, 70, 150);// medium bule rectangle
+	
+  fill(0, 120, 255);// Blue2
+	rect(330, 70, 100, 30);// small bule rectangle
+  
+	fill(255, 255, 0);// Yellow1
+	rect(0, 0, 70, 70);// Small yellow rectangle
+	
+  fill(255, 255, 0);// Yellow2
+	rect(285, 70, 45, 240);// long yellow rectangle
+  
+	fill(255, 255, 0);// Yellow3
+	rect(430, 0, 70, 100);// left yellow rectangle
+	
+	stroke(0);// draw black line
+	strokeWeight(10);
+	line(70, 0, 70, 390);// right vertical1
+	line(285, 0, 285, 390);// middle vertical1
+  line(240, 0, 240, 240);// middle vertical2
+  line(330, 0, 330, 390);// middle vertical3
+  line(430, 0, 430, 310);// left vertical
+	line(0, 70, 430, 70);// top horizontal1
+  line(330, 100, 500, 100);// top horizontal2
+  line(0, 240, 285, 240);// bottom horizontal1
+	line(285, 310, 500, 310);// bottom horizontal2
+  line(0, 310, 70, 310);// short bottom horizontal3
+	
+}
