@@ -1,0 +1,25 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+var ball = 0;
+var ballSpeed = 9;
+var ballChangeY = ballSpeed;
+
+function draw() {
+	background(220);
+	fill(200, 200, 0);
+	ellipse(height/2, ball, 100);
+	ball = ball + ballChangeY;
+  
+  // Check if ball is off right hand side of screen
+	if (ball >= width) {
+		ballChangeY = -ballSpeed;
+	}
+
+	//Check if ball is off left hand side of screen
+	if (ball < 0) {
+		ballChangeY = ballSpeed;
+	}
+
+}
